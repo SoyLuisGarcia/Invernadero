@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="501.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.View.MenuGraficasController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/deadpool.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#fcfcfc" layoutX="102.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRAFICAS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="39.0" layoutY="246.0" mnemonicParsing="false" onAction="#graficaRiegoTipo" prefHeight="50.0" prefWidth="207.0" text="Riegos por Tipo">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/grafica.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="tipoG" layoutX="37.0" layoutY="125.0" mnemonicParsing="false" onAction="#graficaTipo" prefHeight="50.0" prefWidth="207.0" text="Tipo">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/grafica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="proG" layoutX="38.0" layoutY="56.0" mnemonicParsing="false" onAction="#graficaProductos" prefHeight="50.0" prefWidth="207.0" text="Producto">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/grafica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="39.0" layoutY="184.0" mnemonicParsing="false" onAction="#graficaFoto" prefHeight="50.0" prefWidth="207.0" text="Foto">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/grafica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="39.0" layoutY="309.0" mnemonicParsing="false" onAction="#graficaRiegoDia" prefHeight="50.0" prefWidth="207.0" text="Riegos por Dia">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/grafica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="40.0" layoutY="373.0" mnemonicParsing="false" onAction="#graficaRiegoProDia" text="Riegos Progamados porDia">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/grafica.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="atras" layoutX="79.0" layoutY="439.0" mnemonicParsing="false" onAction="#abrirMenu" prefHeight="24.0" prefWidth="123.0" text="Regresar">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/atras.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

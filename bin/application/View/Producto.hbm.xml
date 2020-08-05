@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="application.View">
+  
+    
+     <class dynamic-insert="true" dynamic-update="true"  name="Producto" table="Producto">
+      
+     <id name="idP"
+            column="idP"
+            type="java.lang.String"
+            unsaved-value="null" >
+            
+        </id>
+<property name="nombreP" column="nombreP" type="java.lang.String" />
+<property name="idT_Tipo" column="idT_Tipo" type="java.lang.String" />
+<property name="fecha_ingreso" column="fecha_ingreso" type="java.lang.String" />
+<property name="idC_Condicion" column="idC_Condicion" type="java.lang.String" />
+    
+  
+    
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="application.View">
+  
+    
+     <class dynamic-insert="true" dynamic-update="true"  name="Calendario" table="Calendario">
+      
+     <id name="idC"
+            column="idC"
+            type="java.lang.String"
+            unsaved-value="null" >
+            
+        </id>
+<property name="idP_Producto" column="tipoT" type="java.lang.String" />
+<property name="diaC" column="utilidadT" type="java.lang.String" />
+    
+  
+    
+  </class>
+</hibernate-mapping>
